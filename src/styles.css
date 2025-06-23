@@ -1,0 +1,355 @@
+/* Global Reset & Typography */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    background-color: #1f2937;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1f2937;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+  }
+  /* Hero */
+  .hero {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1f2937; /* Dark background */
+    padding: 0 2rem;
+    margin: 0;
+  }
+  
+  /* Navbar (Optional sticky/fixed version) */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111827; /* slightly darker */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #3b82f6;
+  }
+  
+  /* Hero Text */
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #e5e7eb;
+    margin-top: 6rem; /* ensures it appears below fixed navbar */
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-name {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #60a5fa;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+  }
+  
+  .hero-tagline {
+    font-size: 1.5rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1e40af;
+  }
+  /* Section Containers */
+  section {
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+  }
+  section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #2563eb;
+    display: inline-block;
+  }
+  
+  /* About & Education */
+  .about-section {
+  height: 100vh; /* Full slide height */
+  padding: 6rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #111827;
+  width: 100%;
+}
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+  min-width: 320px;
+  max-width: 540px;
+   display: inline-block;
+}
+
+.about-left h2,
+.about-right h2 {
+  font-size: 2.5rem;
+  display: inline;
+}
+
+.about-left p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.education-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #1f2937;
+  margin-top: 1rem;
+}
+
+
+  
+  
+  /* Timeline Cards (Internships & Experiences) */
+  .timeline-section {
+    padding: 2rem;
+    background-color: #0f172a;
+  }
+  
+  .timeline-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-card {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 90%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+  }
+  
+  .timeline-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .timeline-duration {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Skills Grid */
+  .skills-section {
+  padding: 0 rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  border: 2px solid #0f172a;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card i {
+  font-size: 1.8rem;
+}
+
+  
+  /* Contact Section */
+  .contact {
+    background: #111827;
+    padding-top: 1rem;
+  margin-top: 0;
+  }
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .contact-info {
+    flex: 1 1 300px;
+    color: #f1f1f1;
+    font-size: 1.1rem;
+  }
+  .contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .contact-form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    border: 2px solid #2563eb;
+    border-radius: 4px;
+    background: #1f2937;
+    color: white;
+    font-size: 1rem;
+  }
+  .contact-form button {
+    background: #2563eb;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .contact-form button:hover {
+    background: #1e40af;
+  }
+  
+  /* Footer spacing */
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background: #111827;
+  }
+  html {
+    font-size: 18px; /* zoom effect */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e293b;
+  }
+  
